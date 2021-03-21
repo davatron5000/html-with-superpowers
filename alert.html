@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/svg+xml" href="src/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alert Demo</title>
+  </head>
+  <body>
+    <style>
+    .my-custom-alert {
+      --bg: rebeccapurple;
+      --text: white;
+    }
+    </style>
+    <script type="module" src="/src/custom-alert.js"></script>
+    <custom-alert icon="note" theme="default">
+      <p>This is my alert message with some very important information.</p>
+    </custom-alert>
+    <p>I'm another paragraph in the body.</p>
+    <custom-alert class="my-custom-alert" icon="note" theme="default">
+      <p>Another custom alert is my alert message with some very important information.</p>
+      <p>And another paragraph because people in my organization can't help themselves. And boy do they like to write books of text in this little box. Oh well. It's okay. I built a robust component, stress tested it, and feel pretty confident it can handle whatever bad decisons come its way.</p>
+    </custom-alert>
+    <br/>
+    <custom-alert icon="warn" theme="warn">
+      <h1>Oh god.</h1>
+      <p>Someone gave them a WYSIWYG and now they're dropping headings in here. I'm very worried about the success of the site now.</p>
+    </custom-alert>
+    <br/>
+    <custom-alert icon="warn" theme="danger">
+      <strong>Welcome to the danger zone.</strong>
+      <p>Out along the edges
+always where I burn to be
+the further on the edge
+the hotter the intensity</p>
+    </custom-alert>
+
+  </body>
+</html>

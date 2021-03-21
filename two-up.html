@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/svg+xml" href="src/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Component Demos</title>
+  </head>
+  <body>
+
+    <style>
+
+      article {
+        max-width: 60rem;
+        padding: 2rem;
+        margin: auto;
+      }
+
+      two-up {
+        overflow: hidden;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      /* Two Up Styling API */
+      two-up {
+        /* Color of the track & thumb */
+        --accent-colour: #777;
+        /* Or you can set the two independently: */
+        --track-color: #777;
+        --thumb-color: #777;
+        /* Background of the thumb */
+        --thumb-background: #fff;
+        /* Size of the thumb */
+        --thumb-size: 62px;
+        /* Thickness of the bar */
+        --bar-size: 6px;
+        /* Touch-thickness of the bar */
+        --bar-touch-size: 30px;
+      }
+    </style>
+
+    <article>
+      <two-up class="my-two-up">
+        <div><img src="//i.guim.co.uk/img/media/fecd1f17ecc214368af002ed87a87bf811903322/116_45_3426_2228/master/3426.jpg?width=2000&quality=85&s=631bb786ca02560e3b0654ac30904178" alt=""></div>
+        <div>
+          <img src="//i.guim.co.uk/img/media/fecd1f17ecc214368af002ed87a87bf811903322/0_2418_3543_2304/master/3543.jpg?width=2000&quality=85&s=aca8842b6ae4f22827ad6f4a4a494d19" alt="">
+        </div>
+      </two-up>
+    </article>
+    <script src="https://unpkg.com/two-up-element@1.0.1/dist/two-up.js"></script>
+
+  </body>
+</html>

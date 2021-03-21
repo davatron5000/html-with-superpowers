@@ -1,5 +1,5 @@
 {
-  "name": "HTML-with-Superpowers",
+  "name": "html-with-superpowers",
   "version": "0.0.0",
   "main": "dist/my-vite-element.es.js",
   "exports": {
@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "lit-element": "^2.4.0"

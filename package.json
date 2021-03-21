@@ -1,5 +1,5 @@
 {
-  "name": "WebComponents",
+  "name": "HTML-with-Superpowers",
   "version": "0.0.0",
   "main": "dist/my-vite-element.es.js",
   "exports": {
